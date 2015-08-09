@@ -52,6 +52,6 @@ install:
   - echo %GOPATH%
   - dir C:\mingw64\bin
   - go get github.com/wellington/spritewell
-
+  - go test
 build_script:
   - go build -x -ldflags "-extldflags '-static'"
